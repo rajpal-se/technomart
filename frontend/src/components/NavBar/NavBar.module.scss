@@ -1,0 +1,72 @@
+@import "./../../config/sass-vars.scss";
+
+.root {
+    width: $defaultWidth;
+    background-color: $defaultBackgroundColor;
+    margin: auto;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.navGroupLeft {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    user-select: none;
+
+    a {
+        padding: 2px 3px;
+        position: relative;
+        transition: all 200ms ease-in-out;
+        &[class="active"]::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 80%;
+            border-bottom: 2px solid #505050;
+            left: 0px;
+            bottom: -7px;
+            transform: translateX(10%);
+        }
+    }
+}
+
+.navGroupCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+}
+.navGroupRight {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    gap: 20px;
+    user-select: none;
+
+    div {
+        a,
+        span[role="button"] {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+
+            svg {
+                font-size: 22px;
+            }
+        }
+    }
+}

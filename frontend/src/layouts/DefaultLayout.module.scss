@@ -1,4 +1,11 @@
+@import "./../config//sass-vars.scss";
+
 .root {
     height: 100%;
     width: 100%;
+}
+
+.container {
+    margin-top: $defaultGap;
+    min-height: calc(100% - calc(60px + $defaultGap));
 }

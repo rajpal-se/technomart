@@ -1,0 +1,7 @@
+@import "./../../config/sass-vars.scss";
+
+.root {
+    background-color: $defaultBackgroundColor;
+    width: $defaultWidth;
+    margin: auto;
+}

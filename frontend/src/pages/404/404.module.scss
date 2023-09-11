@@ -1,8 +1,24 @@
+@import "./../../config/sass-vars.scss";
+
 .root {
-    height: 100%;
-    width: 100%;
+    background-color: $defaultBackgroundColor;
+    width: $defaultWidth;
+    margin: auto;
+    height: inherit;
+    padding-top: 20%;
+    padding-bottom: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    hr {
+        border-top: 2px solid gray;
+        width: 100px;
+        margin: 20px auto;
+    }
+
+    p a {
+        color: #03a9f4;
+    }
 }
